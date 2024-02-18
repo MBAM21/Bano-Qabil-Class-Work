@@ -1,0 +1,23 @@
+#File Handling
+f=open('file1.txt','w')
+f.write("Bano Qabil Alkhidmat")
+f.close()
+
+
+f=open('file1.txt')
+print(f.read())
+
+
+f=open('file1.txt','a')
+f.write("\nSo practice it daily")
+f=open('file1.txt')
+print(f.read())
+
+
+f=open('new.txt')
+print(f.readline())#by default first line
+print(f.readline())
+
+
+f=open('new.txt')
+print(f.readlines())
